@@ -1,0 +1,22 @@
+
+{
+  "name": "bod-api",
+  "version": "1.0.0",
+  "description": "An official module for interacting with the BOD API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "list",
+    "api",
+    "javascript"
+  ],
+  "author": "bod",
+  "repository": "bo-d/bod-api",
+  "license": "Apache-2.0",
+  "dependencies": {},
+  "typings": "./typings/index.d.ts"
+}
