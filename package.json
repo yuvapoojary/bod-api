@@ -1,22 +1,27 @@
-
 {
-  "name": "bod-api",
-  "version": "1.0.0",
+  "name": "bodapi.js",
+  "version": "1.1.0",
   "description": "An official module for interacting with the BOD API",
-  "main": "index.js",
+  "main": "src/index.js",
+  "types": "src/index.d.ts",
   "scripts": {
+    "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "discord",
+    "bod",
     "bot",
     "list",
     "api",
-    "javascript"
+    "javascript",
+    "dbl"
   ],
   "author": "bod",
   "repository": "bo-d/bod-api",
   "license": "Apache-2.0",
-  "dependencies": {},
-  "typings": "./typings/index.d.ts"
+  "dependencies": {
+    "typescript": "^3.8.3"
+  },
+  "typings": "./src/index.d.ts"
 }

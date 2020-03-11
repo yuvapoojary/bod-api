@@ -146,7 +146,7 @@ class bod extends EventEmitter {
       
       data.shard_count = shardCount;
     } else {
-      data.server_count = this.client.guilds.size;
+      data.server_count = this.client.guilds.size || this.client.guilds.cache.sze
       if (this.client.shard && this.client.shard.count) {
       
         data.shard_count = this.client.shard.count;

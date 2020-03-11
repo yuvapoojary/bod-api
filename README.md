@@ -2,7 +2,7 @@
 An official module for interacting with the [BOD](https://www.b-o-d.cf) API
 
 ## Installation
-`npm install bod-api`
+`npm install bodapi.js`
 
 ## Documentation
 Full documentation can be found [here]()
@@ -13,12 +13,12 @@ Full documentation can be found [here]()
 ```
 const Discord = require("discord.js");
 const client = new Discord.Client();
-const bod_api = require("bod-api");
+const bod_api = require("bodapi.js");
 const bod = new bod_api('Your api token', client);
 
-// Optional events
-bod.on('posted', () => {
-  console.log('Server count posted!');
+// m is optional
+bod.on('posted', (m) => {
+  console.log(m);
 })
 
 bod.on('error', e => {
