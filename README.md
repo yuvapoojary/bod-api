@@ -10,7 +10,7 @@ Full documentation can be found [here]()
 ## Example:
 
 ### Posting server count (Discord.js and Eris)
-```
+```js
 const Discord = require("discord.js");
 const client = new Discord.Client();
 const bod_api = require("bodapi.js");
@@ -28,7 +28,7 @@ bod.on('error', e => {
 
 
 ### Getting bot info
-```
+```js
 bod.getStats("bot id").then(stats => {
 console.log(stats)
 });
@@ -36,7 +36,7 @@ console.log(stats)
 
 
 ### Getting user info
-```
+```js
 bod.getUser("user id").then(user => {
 console.log(user);
 });
